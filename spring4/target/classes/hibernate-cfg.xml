@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<!--声明Hibernate配置文件的开始-->
+<hibernate-configuration>
+    <!--表明以下的配置是针对session-factory配置的，SessionFactory是Hibernate中的一个类，
+    这个类主要负责保存HIbernate的配置信息，以及对Session的操作-->
+    <session-factory>
+        <!--配置hibernate的基本属性-->
+        <!--1、数据源需配置到IOC容器中，所以在此处不再需要配置数据源-->
+        <!--2、关联的 .hbm.xml也在IOC容器配置SessionFactory实例时在进行配置-->
+        <!--3、配置hibernate的基本属性：方言，SQL显示即格式化生产数据表的策略以及二级缓存等-->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+    </session-factory>
+</hibernate-configuration>

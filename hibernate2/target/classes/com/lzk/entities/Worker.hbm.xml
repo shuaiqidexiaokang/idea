@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.lzk.entities">
+    <class name="Worker" table="WORKER">
+        <id name="id" type="java.lang.Integer" column="ID">
+            <generator class="native"></generator>
+        </id>
+        <property name="name" type="java.lang.String" column="NAME"></property>
+        <!--映射组成关系-->
+        <component name="pay" class="Pay">
+            <!--指定组成关系的组件-->
+            <property name="monthlyPay" type="int" column="MONTHLY_PAY"></property>
+            <property name="yearPay" type="int" column="YEAR_PAY"></property>
+            <property name="vocationWithPay" type="int" column="VOCATION_WITH_PAY"></property>
+        </component>
+
+
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!-- 配置bean
+         class:bean的全类名，通过反射的方式在IOC容器中创建bean，所以要求bean中必须有无参构造器
+         id:标识容器中bean,id唯一-->
+    <!-- 通过setter方法配置bean 的属性值-->
+    <bean id="helloWorld" class="com.lzk.beans.HelloWorld">
+        <property name="name" value="lzk"></property>
+    </bean>
+
+    <!-- 通过构造方法配置bean 的属性值-->
+    <bean id="car" class="com.lzk.beans.Car">
+        <constructor-arg value="Audi" index="0"></constructor-arg>
+        <constructor-arg value="ShangHai" index="1"></constructor-arg>
+        <constructor-arg value="300000.0" index="2"></constructor-arg>
+    </bean>
+
+    <bean id="car2" class="com.lzk.beans.Car">
+        <constructor-arg value="Baoma" type="java.lang.String"></constructor-arg>
+        <constructor-arg type="java.lang.String">
+            <!--<如果字面值包含特殊字符可以使用<![CDATA[]]>包裹起来
+                属性值也可以使用value子节点进行配置-->
+            <value><![CDATA[<ShangHai^>]]></value>
+        </constructor-arg>
+        <constructor-arg type="int">
+            <value type="int">200</value>
+        </constructor-arg>
+    </bean>
+
+    <bean id="person" class="com.lzk.beans.Person">
+        <property name="name" value="Tom"></property>
+        <property name="age" value="24"></property>
+        <!---内部bean-->
+        <property name="car">
+            <bean class="com.lzk.beans.Car">
+                <constructor-arg value="Audi" index="0"></constructor-arg>
+                <constructor-arg value="ShangHai" index="1"></constructor-arg>
+                <constructor-arg value="300000.0" index="2"></constructor-arg>
+            </bean>
+        </property>
+        <!--
+            可以使用<property name="car" ref="car"></property>建立bean之间的引用关系
+            <property name="car" ref="car"></property>与
+            <property name="car">
+            <ref bean="car"></ref>
+        </property>表示的意思相同
+        -->
+    </bean>
+
+    <!--使用p命名空间为bean属性赋值，需要先导入p命名空间-->
+    <bean id="helloWorld2" class="com.lzk.beans.HelloWorld" p:name="zzz"></bean>
+</beans>

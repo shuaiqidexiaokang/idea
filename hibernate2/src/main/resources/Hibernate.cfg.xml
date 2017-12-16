@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!--  1、配置连接数据库的基本信息 -->
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost/hibernate2</property>
+
+        <!--  2、配置hibernate的基本信息 -->
+        <!--  配置hibernate所使用的方言 -->
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <!--  执行操作时是否子控制台打印 -->
+        <property name="show_sql">true</property>
+        <!--  是否对SQL进行格式化 -->
+        <property name="format_sql">true</property>
+        <!--  指定自动生成数据表的策略 -->
+        <property name="hbm2ddl.auto">update</property>
+        <!--  设置Hibernate的事务隔离级别 -->
+        <property name="connection.isolation">2</property>
+        <!--  删除对象后，使其OID置为null -->
+        <property name="use_identifier_rollback">true</property>
+
+        <!-- 配置c3p数据源 -->
+        <property name="hibernate.c3p0.max_size">10</property>
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.acquire_increment">2</property>
+        <property name="hibernate.c3p0.idle_test_period">2000</property>
+        <property name="hibernate.c3p0.timeout">2000</property>
+        <property name="hibernate.c3p0.max_statements">10</property>
+        
+        <!--设定JDBC的Statement读取数据的时候每次从数据库中取出的记录数-->
+        <property name="hibernate.jdbc.batch_size">30</property>
+        <!--设定数据库批量更新删除插入的批次大小-->
+        <property name="hibernate.jdbc.fetch_size">100</property>
+        <!--  3、指定关联的.hbm.xml文件 -->
+        <mapping resource="com/lzk/entities/News.hbm.xml"></mapping>
+        <mapping resource="com/lzk/entities/Worker.hbm.xml"></mapping>
+        <mapping resource="com/lzk/n21/Customer.hbm.xml"></mapping>
+        <mapping resource="com/lzk/n21/Order.hbm.xml"></mapping>
+        <mapping resource="com/lzk/n21both/Customer.hbm.xml"></mapping>
+        <mapping resource="com/lzk/n21both/Order.hbm.xml"></mapping>
+    </session-factory>
+</hibernate-configuration>

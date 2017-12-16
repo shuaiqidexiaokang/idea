@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--抽象bean：bean的abstract属性为true的bean，
+        这样的bean不能被IOC容器实例化，只能来被继承配置，即只能作为模板
+        若某一个bean的class属性没有指定，则该bean必须是一个抽象bean
+    -->
+    <bean id="address1" class="com.lzk.relation.Address"
+          p:city="ZheJiang" p:street="WenZhou" abstract="true">
+    </bean>
+
+    <!--bean配置的继承：使用bean的parent属性指定继承那个bean的配置-->
+    <bean id="address2" class="com.lzk.relation.Address"
+          p:street="HangZhou" parent="address1" >
+    </bean>
+
+    <bean id="car"  class="com.lzk.relation.Car" p:brand="Audi" p:price="400000"></bean>
+
+    <!-- 要求在配置Person时，必须有一个关联的car！换句话说person这个bean依赖于Car这个bean-->
+    <bean id="person" class="com.lzk.relation.Person" p:name="Tom" p:address-ref="address2" depends-on="car">
+
+    </bean>
+</beans>

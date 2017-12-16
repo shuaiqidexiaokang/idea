@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--scope="singleton" 默认为单例 容器初始化时创建bean实例，在整个容器的生命周期内只创建一个bean
+        scope="prototype"表示原型 容器初始化时不创建bean实例，而在每次请求时都创建一个新的bean实例，并返回
+     -->
+    <bean id="car" class="com.lzk.scope.Car" scope="prototype">
+        <property name="brand" value="Audi"></property>
+        <property name="price" value="300000"></property>
+    </bean>
+</beans>
