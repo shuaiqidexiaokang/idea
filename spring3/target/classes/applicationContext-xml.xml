@@ -53,11 +53,13 @@
     <!--2、配置事务属性-->
     <tx:advice id="txAdvice" transaction-manager="transactionManager">
         <tx:attributes>
+            <tx:method name="purchase" propagation="REQUIRES_NEW"></tx:method>
+            <tx:method name="get*" read-only="true"></tx:method>
             <tx:method name="*"/>
         </tx:attributes>
     </tx:advice>
 
-    <!--2、配置事务属性-->
+    <!--3、配置事务切入点，以及把事务切入点和事务属性关联起来-->
     <aop:config>
         <aop:pointcut id="pointcut" expression="execution(* com.lzk.xml.service.*.*(..))"></aop:pointcut>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="pointcut"></aop:advisor>

@@ -24,66 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="applicationContext-xml.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="applicationContext-xml.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext-xml.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="55" column="37" lean-forward="false" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="37" />
+            <state relative-caret-position="1350">
+              <caret line="50" column="11" lean-forward="true" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookShopDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/xml/service/impl/BookShopDaoImpl.java">
+      <file leaf-file-name="BookShopService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/xml/service/BookShopService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-216">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <marker date="1512404501827" expanded="true" signature="493:530" ph="SELECT price... book" />
-                <marker date="1512404501827" expanded="true" signature="691:734" ph="SELECT stock... book_stock" />
-                <marker date="1512404501827" expanded="true" signature="920:974" ph="UPDATE book_... " />
-                <marker date="1512404501827" expanded="true" signature="1127:1173" ph="SELECT balan... account" />
-                <marker date="1512404501827" expanded="true" signature="1374:1433" ph="UPDATE accou... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/jdbc/Student.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="662">
-              <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JDBCTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/lzk/jdbc/JDBCTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="113" column="5" lean-forward="true" selection-start-line="113" selection-start-column="5" selection-end-line="113" selection-end-column="5" />
-              <folding>
-                <marker date="1512316684105" expanded="true" signature="1540:1584" ph="UPDATE stude... " />
-                <marker date="1512316684105" expanded="true" signature="2057:2098" ph="UPDATE stude... " />
-                <marker date="1512316684105" expanded="true" signature="2057:2101" ph="UPDATE stude... " />
-                <marker date="1512316684105" expanded="true" signature="2494:2544" ph="INSERT INTO student... " />
-                <marker date="1512316684105" expanded="true" signature="3069:3098" ph="SELECT COUNT... student" />
-                <marker date="1512316684105" expanded="true" signature="3336:3386" ph="SELECT id,na... student" />
-                <marker date="1512316684105" expanded="true" signature="4031:4081" ph="SELECT id,na... student" />
-                <marker date="1512316684105" expanded="true" signature="4399:4438" ph="update stude... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" column="44" lean-forward="false" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+            <state relative-caret-position="108">
+              <caret line="4" column="55" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -92,52 +47,87 @@
       <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-190">
-              <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+            <state relative-caret-position="297">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpringTransactionTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/lzk/xml/SpringTransactionTest.java">
+      <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/jdbc/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="135">
+              <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookShopDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/tx/BookShopDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="14" column="61" lean-forward="false" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#872#873#0" expanded="true" />
-                <element signature="e#925#926#0" expanded="true" />
+                <marker date="1512374044125" expanded="true" signature="412:449" ph="SELECT price... book" />
+                <marker date="1512374044125" expanded="true" signature="610:653" ph="SELECT stock... book_stock" />
+                <marker date="1512374044125" expanded="true" signature="839:893" ph="UPDATE book_... " />
+                <marker date="1512374044125" expanded="true" signature="1046:1092" ph="SELECT balan... account" />
+                <marker date="1512374044125" expanded="true" signature="1293:1352" ph="UPDATE accou... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="BookShopService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/xml/service/BookShopService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/tx/BookShopService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state relative-caret-position="108">
+              <caret line="4" column="53" lean-forward="false" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="BookShopServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/xml/service/impl/BookShopServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/tx/BookShopServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="24" />
+              <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CashierImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/xml/service/impl/CashierImpl.java">
+      <file leaf-file-name="BookStockException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/tx/BookStockException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="216">
+              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <folding>
+                <element signature="e#167#168#0" expanded="true" />
+                <element signature="e#197#198#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CashierImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/tx/CashierImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cashier.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/tx/Cashier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -156,9 +146,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzk/jdbc/JDBCTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzk/jdbc/Student.java" />
         <option value="$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.2.2.RELEASE/spring-jdbc-4.2.2.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class" />
         <option value="$PROJECT_DIR$/src/test/java/com/lzk/jdbc/JDBCTest.java" />
@@ -171,11 +159,9 @@
         <option value="$PROJECT_DIR$/src/test/java/com/lzk/tx/TestBookShopDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzk/tx/BookShopDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzk/tx/BookShopService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzk/tx/Cashier.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/lzk/tx/SpringTransactionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzk/tx/CashierImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lzk/tx/BookShopServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzk/tx/xml/tx/Cashier.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzk/tx/xml/Cashier.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzk/xml/SpringTransactionTest.java" />
@@ -185,7 +171,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/lzk/xml/impl/CashierImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzk/xml/service/Cashier.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzk/xml/service/impl/CashierImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzk/tx/BookShopServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext-xml.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -203,8 +193,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="134" />
-    <option name="y" value="8" />
+    <option name="x" value="209" />
     <option name="width" value="1166" />
     <option name="height" value="765" />
   </component>
@@ -223,6 +212,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -272,28 +264,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lzk" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lzk" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lzk" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="tx" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring3" type="b2602c69:ProjectViewProjectNode" />
@@ -350,18 +321,10 @@
               <item name="lzk" type="462c0819:PsiDirectoryNode" />
               <item name="xml" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="spring3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring3" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -401,7 +364,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.SpringTransactionTest.testPurchase (1)">
+    <configuration name="SpringTransactionTest.testCheckout (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring3" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.lzk.xml" />
+      <option name="MAIN_CLASS_NAME" value="com.lzk.xml.SpringTransactionTest" />
+      <option name="METHOD_NAME" value="testCheckout" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="SpringTransactionTest.testCheckout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring3" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -440,6 +422,44 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="SpringTransactionTest.testFindBookPriceByIsbn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring3" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.lzk.tx" />
+      <option name="MAIN_CLASS_NAME" value="com.lzk.tx.SpringTransactionTest" />
+      <option name="METHOD_NAME" value="testFindBookPriceByIsbn" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="SpringTransactionTest.testPurchase (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring3" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.lzk.xml" />
+      <option name="MAIN_CLASS_NAME" value="com.lzk.xml.SpringTransactionTest" />
+      <option name="METHOD_NAME" value="testPurchase" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="SpringTransactionTest.testPurchase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring3" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -466,25 +486,6 @@
       <option name="PACKAGE_NAME" value="com.lzk.xml" />
       <option name="MAIN_CLASS_NAME" value="com.lzk.xml.SpringTransactionTest" />
       <option name="METHOD_NAME" value="testPurchase" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="SpringTransactionTest.testUpdateBookStock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring3" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.lzk.tx" />
-      <option name="MAIN_CLASS_NAME" value="com.lzk.tx.SpringTransactionTest" />
-      <option name="METHOD_NAME" value="testUpdateBookStock" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -555,16 +556,20 @@
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.SpringTransactionTest.testUpdateBookStock" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.SpringTransactionTest.testFindBookPriceByIsbn" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.SpringTransactionTest.testPurchase" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.SpringTransactionTest.testCheckout" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.SpringTransactionTest.testCheckout (1)" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SpringTransactionTest.testPurchase (1)" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.SpringTransactionTest.testCheckout" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.SpringTransactionTest.testPurchase" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.SpringTransactionTest.testUpdateBookStock" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SpringTransactionTest.testPurchase (1)" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SpringTransactionTest.testCheckout (1)" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SpringTransactionTest.testCheckout" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SpringTransactionTest.testPurchase" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.SpringTransactionTest.testFindBookPriceByIsbn" />
       </list>
     </recent_temporary>
   </component>
@@ -572,35 +577,35 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TestHistory">
-    <history-entry file="SpringTransactionTest_testCheckout - 2017.12.05 at 00h 23m 48s.xml">
+    <history-entry file="SpringTransactionTest_testCheckout - 2017.12.16 at 10h 03m 33s.xml">
       <configuration name="SpringTransactionTest.testCheckout" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpringTransactionTest_testCheckout - 2017.12.05 at 00h 24m 12s.xml">
-      <configuration name="SpringTransactionTest.testCheckout" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpringTransactionTest_testCheckout_(1) - 2017.12.05 at 00h 01m 59s.xml">
+    <history-entry file="SpringTransactionTest_testCheckout_(1) - 2017.12.16 at 20h 20m 40s.xml">
       <configuration name="SpringTransactionTest.testCheckout (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpringTransactionTest_testCheckout_(1) - 2017.12.05 at 00h 02m 44s.xml">
-      <configuration name="SpringTransactionTest.testCheckout (1)" configurationId="JUnit" />
+    <history-entry file="SpringTransactionTest_testFindBookPriceByIsbn - 2017.12.16 at 10h 02m 15s.xml">
+      <configuration name="SpringTransactionTest.testFindBookPriceByIsbn" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpringTransactionTest_testCheckout_(1) - 2017.12.05 at 00h 03m 36s.xml">
-      <configuration name="SpringTransactionTest.testCheckout (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpringTransactionTest_testPurchase - 2017.12.05 at 00h 18m 33s.xml">
+    <history-entry file="SpringTransactionTest_testPurchase - 2017.12.16 at 10h 02m 24s.xml">
       <configuration name="SpringTransactionTest.testPurchase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpringTransactionTest_testPurchase_(1) - 2017.12.05 at 00h 01m 23s.xml">
-      <configuration name="SpringTransactionTest.testPurchase (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpringTransactionTest_testPurchase_(1) - 2017.12.05 at 00h 03m 23s.xml">
-      <configuration name="SpringTransactionTest.testPurchase (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpringTransactionTest_testPurchase_(1) - 2017.12.05 at 00h 14m 14s.xml">
-      <configuration name="SpringTransactionTest.testPurchase (1)" configurationId="JUnit" />
+    <history-entry file="SpringTransactionTest_testPurchase - 2017.12.16 at 10h 02m 48s.xml">
+      <configuration name="SpringTransactionTest.testPurchase" configurationId="JUnit" />
     </history-entry>
     <history-entry file="SpringTransactionTest_testPurchase_(1) - 2017.12.05 at 00h 17m 31s.xml">
       <configuration name="SpringTransactionTest.testPurchase (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringTransactionTest_testPurchase_(1) - 2017.12.16 at 20h 20m 58s.xml">
+      <configuration name="SpringTransactionTest.testPurchase (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringTransactionTest_testUpdateBookStock - 2017.12.16 at 10h 01m 11s.xml">
+      <configuration name="SpringTransactionTest.testUpdateBookStock" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringTransactionTest_testUpdateUserAccount - 2017.12.16 at 10h 01m 25s.xml">
+      <configuration name="SpringTransactionTest.testUpdateUserAccount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringTransactionTest_testUpdateUserAccount - 2017.12.16 at 10h 02m 00s.xml">
+      <configuration name="SpringTransactionTest.testUpdateUserAccount" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -609,10 +614,10 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3170347" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45425868" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27525622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -636,6 +641,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="3" />
@@ -643,14 +653,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/tx/BookShopServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -706,17 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1188">
           <caret line="44" column="33" lean-forward="false" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
-          <folding>
-            <element signature="e#4148#4157#0" expanded="false" />
-            <marker date="1512316684105" expanded="true" signature="1540:1584" ph="UPDATE stude... " />
-            <marker date="1512316684105" expanded="true" signature="2057:2098" ph="UPDATE stude... " />
-            <marker date="1512316684105" expanded="true" signature="2057:2101" ph="UPDATE stude... " />
-            <marker date="1512316684105" expanded="true" signature="2494:2544" ph="INSERT INTO student... " />
-            <marker date="1512316684105" expanded="true" signature="3069:3098" ph="SELECT COUNT... student" />
-            <marker date="1512316684105" expanded="true" signature="3336:3386" ph="SELECT id,na... student" />
-            <marker date="1512316684105" expanded="true" signature="4031:4081" ph="SELECT id,na... student" />
-            <marker date="1512316684105" expanded="true" signature="4399:4438" ph="update stude... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -732,7 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -740,17 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding>
-            <element signature="e#4148#4157#0" expanded="false" />
-            <marker date="1512316684105" expanded="true" signature="1540:1584" ph="UPDATE stude... " />
-            <marker date="1512316684105" expanded="true" signature="2057:2098" ph="UPDATE stude... " />
-            <marker date="1512316684105" expanded="true" signature="2057:2101" ph="UPDATE stude... " />
-            <marker date="1512316684105" expanded="true" signature="2494:2544" ph="INSERT INTO student... " />
-            <marker date="1512316684105" expanded="true" signature="3069:3098" ph="SELECT COUNT... student" />
-            <marker date="1512316684105" expanded="true" signature="3336:3386" ph="SELECT id,na... student" />
-            <marker date="1512316684105" expanded="true" signature="4031:4081" ph="SELECT id,na... student" />
-            <marker date="1512316684105" expanded="true" signature="4399:4438" ph="update stude... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -766,7 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,17 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding>
-            <element signature="e#4148#4157#0" expanded="false" />
-            <marker date="1512316684105" expanded="true" signature="1540:1584" ph="UPDATE stude... " />
-            <marker date="1512316684105" expanded="true" signature="2057:2098" ph="UPDATE stude... " />
-            <marker date="1512316684105" expanded="true" signature="2057:2101" ph="UPDATE stude... " />
-            <marker date="1512316684105" expanded="true" signature="2494:2544" ph="INSERT INTO student... " />
-            <marker date="1512316684105" expanded="true" signature="3069:3098" ph="SELECT COUNT... student" />
-            <marker date="1512316684105" expanded="true" signature="3336:3386" ph="SELECT id,na... student" />
-            <marker date="1512316684105" expanded="true" signature="4031:4081" ph="SELECT id,na... student" />
-            <marker date="1512316684105" expanded="true" signature="4399:4438" ph="update stude... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -816,19 +783,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="60" column="4" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/jdbc/JDBCTest.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4860">
-          <caret line="180" column="21" lean-forward="false" selection-start-line="180" selection-start-column="21" selection-end-line="180" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.2.2.RELEASE/spring-jdbc-4.2.2.RELEASE.jar!/org/springframework/jdbc/core/RowMapper.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -865,89 +823,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/tx/BookShopDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        <state relative-caret-position="81">
+          <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/tx/BookStockException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/tx/BookShopDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        <state relative-caret-position="135">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/tx/UserAccountException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="3" column="35" lean-forward="false" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        <state relative-caret-position="216">
+          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="e#271#272#0" expanded="false" />
+            <element signature="e#308#309#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/tx/BookShopDaoImpl.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.8.7/aspectjweaver-1.8.7.jar!/org/aspectj/weaver/reflect/ReflectionWorld.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="31" column="37" lean-forward="false" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        <state relative-caret-position="162">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/tx/BookShopService.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lzk/jdbc/JDBCTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="53" lean-forward="false" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/tx/Cashier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/tx/CashierImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/tx/BookShopServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/xml/BookShopDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/xml/BookStockException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/xml/UserAccountException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/lzk/tx/SpringTransactionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="28" />
+        <state relative-caret-position="-688">
+          <caret line="77" column="7" lean-forward="false" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="7" />
+          <folding>
+            <marker date="1512316684105" expanded="true" signature="1540:1584" ph="UPDATE stude... " />
+            <marker date="1512316684105" expanded="true" signature="2057:2101" ph="UPDATE stude... " />
+            <marker date="1512316684105" expanded="true" signature="2494:2544" ph="INSERT INTO student... " />
+            <marker date="1512316684105" expanded="true" signature="3069:3098" ph="SELECT COUNT... student" />
+            <marker date="1512316684105" expanded="true" signature="3336:3386" ph="SELECT id,na... student" />
+            <marker date="1512316684105" expanded="true" signature="4031:4081" ph="SELECT id,na... student" />
+            <marker date="1512316684105" expanded="true" signature="4399:4438" ph="UPDATE stude... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -958,88 +878,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/lzk/xml/SpringTransactionTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/xml/service/impl/CashierImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-            <element signature="e#925#926#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/xml/service/BookShopService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/xml/UserAccountException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/jdbc/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/lzk/jdbc/JDBCTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="113" column="5" lean-forward="true" selection-start-line="113" selection-start-column="5" selection-end-line="113" selection-end-column="5" />
-          <folding>
-            <element signature="e#4148#4157#0" expanded="false" />
-            <marker date="1512316684105" expanded="true" signature="1540:1584" ph="UPDATE stude... " />
-            <marker date="1512316684105" expanded="true" signature="2057:2098" ph="UPDATE stude... " />
-            <marker date="1512316684105" expanded="true" signature="2057:2101" ph="UPDATE stude... " />
-            <marker date="1512316684105" expanded="true" signature="2494:2544" ph="INSERT INTO student... " />
-            <marker date="1512316684105" expanded="true" signature="3069:3098" ph="SELECT COUNT... student" />
-            <marker date="1512316684105" expanded="true" signature="3336:3386" ph="SELECT id,na... student" />
-            <marker date="1512316684105" expanded="true" signature="4031:4081" ph="SELECT id,na... student" />
-            <marker date="1512316684105" expanded="true" signature="4399:4438" ph="update stude... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="44" lean-forward="false" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="351">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/xml/service/impl/BookShopServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="24" />
+        <state relative-caret-position="243">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/xml/BookStockException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/xml/service/impl/CashierImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/xml/BookShopDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="108">
+          <caret line="4" column="49" lean-forward="false" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/xml/service/impl/BookShopDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="270">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
             <marker date="1512404501827" expanded="true" signature="493:530" ph="SELECT price... book" />
             <marker date="1512404501827" expanded="true" signature="691:734" ph="SELECT stock... book_stock" />
@@ -1050,10 +936,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lzk/xml/SpringTransactionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="e#762#763#0" expanded="true" />
+            <element signature="e#829#830#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lzk/tx/SpringTransactionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/xml/service/BookShopService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="55" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext-xml.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="55" column="37" lean-forward="false" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="37" />
+        <state relative-caret-position="1350">
+          <caret line="50" column="11" lean-forward="true" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/tx/BookShopService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="53" lean-forward="false" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/jdbc/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/tx/BookShopDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="14" column="61" lean-forward="false" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+          <folding>
+            <marker date="1512374044125" expanded="true" signature="412:449" ph="SELECT price... book" />
+            <marker date="1512374044125" expanded="true" signature="610:653" ph="SELECT stock... book_stock" />
+            <marker date="1512374044125" expanded="true" signature="839:893" ph="UPDATE book_... " />
+            <marker date="1512374044125" expanded="true" signature="1046:1092" ph="SELECT balan... account" />
+            <marker date="1512374044125" expanded="true" signature="1293:1352" ph="UPDATE accou... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/tx/BookShopServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/tx/BookStockException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding>
+            <element signature="e#167#168#0" expanded="true" />
+            <element signature="e#197#198#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/tx/Cashier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzk/tx/CashierImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="18" />
           <folding />
         </state>
       </provider>

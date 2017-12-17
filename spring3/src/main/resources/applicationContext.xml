@@ -32,11 +32,15 @@
         <constructor-arg ref="dataSource"></constructor-arg>
     </bean>
 
-    <!--配置事务管理器-->
+    <!--1、配置事务管理器-->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"></property>
     </bean>
 
-    <!--启动事务注解-->
+    <!--2、启动事务注解-->
     <tx:annotation-driven transaction-manager="transactionManager"></tx:annotation-driven>
+
+    <!---3、添加事务注解-->
+    <!--在需要的事务的地方加上@Transactional-->
+
 </beans>

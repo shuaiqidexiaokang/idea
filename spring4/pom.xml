@@ -13,7 +13,23 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/java</directory>
+        <includes>
+          <include>**/*.hbm.xml</include>
+        </includes>
+      </resource>
+      <resource>
+        <directory>src/main/resources</directory>
+        <includes>
+          <include>**/*.xml</include>
+          <include>**/*.properties</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -42,6 +58,14 @@
       <artifactId>hibernate-jpa-2.0-api</artifactId>
       <version>1.0.0.Final</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+      <version>1.8.10</version>
+    </dependency>
+
+
     <dependency>
       <groupId>javassist</groupId>
       <artifactId>javassist</artifactId>
@@ -110,114 +134,90 @@
       <artifactId>commons-logging</artifactId>
       <version>1.1.1</version>
     </dependency>
-
-
     <!--spring aop-->
-
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-aop</artifactId>
       <version>4.2.2.RELEASE</version>
     </dependency>
-
     <!-- spring aspect-->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-aspects</artifactId>
       <version>4.2.2.RELEASE</version>
     </dependency>
-
     <!--spring context support-->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context-support</artifactId>
       <version>4.2.2.RELEASE</version>
     </dependency>
-
     <!--spring instrument-->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-instrument</artifactId>
       <version>4.2.2.RELEASE</version>
     </dependency>
-
-
     <!--spring jdbc-->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-jdbc</artifactId>
       <version>4.2.2.RELEASE</version>
     </dependency>
-
     <!--spring jms-->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-jms</artifactId>
       <version>4.2.2.RELEASE</version>
     </dependency>
-
     <!--spring messaging-->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-messaging</artifactId>
       <version>4.2.2.RELEASE</version>
     </dependency>
-
     <!--spring orm-->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-orm</artifactId>
       <version>4.2.2.RELEASE</version>
     </dependency>
-
-
     <!--spring oxm-->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-oxm</artifactId>
       <version>4.2.2.RELEASE</version>
     </dependency>
-
-
     <!--spring test-->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-test</artifactId>
       <version>4.2.2.RELEASE</version>
     </dependency>
-
-
     <!--spring tx-->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-tx</artifactId>
       <version>4.2.2.RELEASE</version>
     </dependency>
-
-
     <!--spring web-->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-web</artifactId>
       <version>4.2.2.RELEASE</version>
     </dependency>
-
-
     <!--spring mvc-->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
       <version>4.2.2.RELEASE</version>
     </dependency>
-
-
     <!--spring web portlet-->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc-portlet</artifactId>
       <version>4.2.2.RELEASE</version>
     </dependency>
-
     <!--spring websocket-->
     <dependency>
       <groupId>org.springframework</groupId>

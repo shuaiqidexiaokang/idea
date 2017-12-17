@@ -11,7 +11,7 @@
         <!--1、数据源需配置到IOC容器中，所以在此处不再需要配置数据源-->
         <!--2、关联的 .hbm.xml也在IOC容器配置SessionFactory实例时在进行配置-->
         <!--3、配置hibernate的基本属性：方言，SQL显示即格式化生产数据表的策略以及二级缓存等-->
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
