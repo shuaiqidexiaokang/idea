@@ -2,40 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fb76d50-fdd0-499c-a604-16ffcca565eb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../spring1/src/main/resources/beans-beanfactory.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../spring1/target/classes/beans-beanfactory.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spring1/target/classes/com/lzk/factorybean/Main.class" afterPath="$PROJECT_DIR$/../spring1/target/classes/com/lzk/factorybean/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spring3/target/classes/com/lzk/tx/BookShopServiceImpl.class" afterPath="$PROJECT_DIR$/../spring3/target/classes/com/lzk/tx/BookShopServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/lzk/hibernate/SprigHibernateTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/lzk/hibernate/SprigHibernateTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../hibernate4/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../hibernate4/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spring1/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../spring1/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spring1/src/main/java/com/lzk/factorybean/Main.java" afterPath="$PROJECT_DIR$/../spring1/src/main/java/com/lzk/factorybean/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spring1/src/main/resources/beans-spel.xml" afterPath="$PROJECT_DIR$/../spring1/src/main/resources/beans-spel.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spring2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../spring2/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spring2/src/main/resources/applicationContext-xml.xml" afterPath="$PROJECT_DIR$/../spring2/src/main/resources/applicationContext-xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spring3/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../spring3/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spring3/pom.xml" afterPath="$PROJECT_DIR$/../spring3/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spring3/spring3.iml" afterPath="$PROJECT_DIR$/../spring3/spring3.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spring3/src/main/java/com/lzk/tx/BookShopServiceImpl.java" afterPath="$PROJECT_DIR$/../spring3/src/main/java/com/lzk/tx/BookShopServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spring3/src/main/resources/applicationContext-xml.xml" afterPath="$PROJECT_DIR$/../spring3/src/main/resources/applicationContext-xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spring3/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/../spring3/src/main/resources/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spring3/src/main/resources/db.properties" afterPath="$PROJECT_DIR$/../spring3/src/main/resources/db.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spring3/target/classes/applicationContext-xml.xml" afterPath="$PROJECT_DIR$/../spring3/target/classes/applicationContext-xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spring3/target/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/../spring3/target/classes/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spring3/target/classes/db.properties" afterPath="$PROJECT_DIR$/../spring3/target/classes/db.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring4.iml" afterPath="$PROJECT_DIR$/spring4.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/db.properties" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/hibernate-cfg.xml" afterPath="$PROJECT_DIR$/src/main/resources/hibernate-cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/lzk/hibernate/SprigHibernateTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/lzk/hibernate/SprigHibernateTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/db.properties" afterPath="$PROJECT_DIR$/target/classes/db.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hibernate-cfg.xml" afterPath="$PROJECT_DIR$/target/classes/hibernate-cfg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../seckill/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../seckill/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -75,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/lzk/hibernate/SprigHibernateTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/lzk/hibernate/dao/impl/BookShopDaoImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="428">
-              <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+              <caret line="36" column="1" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -117,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate-cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
-              <caret line="14" column="59" lean-forward="true" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+              <caret line="14" column="59" lean-forward="false" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -127,7 +94,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/lzk/hibernate/service/impl/BookShopServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
-              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
+              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -207,8 +174,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="209" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="134" />
+    <option name="y" value="8" />
     <option name="width" value="1166" />
     <option name="height" value="765" />
   </component>
@@ -324,7 +292,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hibernate4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../seckill" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -568,7 +536,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -578,7 +546,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.38726208" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33175355" sideWeight="0.6127379" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33175355" sideWeight="0.6127379" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -889,7 +857,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate-cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="14" column="59" lean-forward="true" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+          <caret line="14" column="59" lean-forward="false" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
           <folding />
         </state>
       </provider>
@@ -908,7 +876,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/lzk/hibernate/SprigHibernateTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -918,7 +886,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/lzk/hibernate/dao/impl/BookShopDaoImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
-          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+          <caret line="36" column="1" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -934,7 +902,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/lzk/hibernate/service/impl/BookShopServiceImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

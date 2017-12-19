@@ -1,5 +1,4 @@
 import com.lzk.entity.Seckill;
-import com.lzk.entity.SuccessKilled;
 import org.junit.Test;
 import org.qingpu.Utils.sql.MybatisCRUDGenerator;
 

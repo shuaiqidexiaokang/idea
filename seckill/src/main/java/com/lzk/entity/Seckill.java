@@ -3,19 +3,19 @@ package com.lzk.entity;
 import java.util.Date;
 
 public class Seckill {
-    private long seckillid;
+    private long seckillId;
     private String name;
     private int number;
     private Date startTime;
     private Date endTime;
     private Date createTime;
 
-    public long getSeckillid() {
-        return seckillid;
+    public long getSeckillId() {
+        return seckillId;
     }
 
-    public void setSeckillid(long seckillid) {
-        this.seckillid = seckillid;
+    public void setSeckillId(long seckillId) {
+        this.seckillId = seckillId;
     }
 
     public String getName() {
@@ -61,7 +61,7 @@ public class Seckill {
     @Override
     public String toString() {
         return "Seckill{" +
-                "seckillid=" + seckillid +
+                "seckillId=" + seckillId +
                 ", name='" + name + '\'' +
                 ", number=" + number +
                 ", startTime=" + startTime +

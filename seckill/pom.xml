@@ -15,7 +15,6 @@
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
-
     <!-- 补全项目依赖 -->
     <!-- 1:日志 java日志：slf4j,log4j,logback,common-logging
         slf4j 是规范/接口
@@ -57,11 +56,7 @@
       <artifactId>c3p0</artifactId>
       <version>0.9.1.2</version>
     </dependency>
-    <dependency>
-      <groupId>org.qingpu</groupId>
-      <artifactId>Utils</artifactId>
-      <version>0.4.6</version>
-    </dependency>
+
     <!--3:DAO框架：Mybatis依赖  -->
     <!-- mybatis自身依赖 -->
     <dependency>
@@ -101,7 +96,6 @@
       <artifactId>javax.servlet-api</artifactId>
       <version>3.1.0</version>
     </dependency>
-
     <!-- 4:spring依赖 -->
     <!-- 1）spring核心依赖 -->
     <dependency>
@@ -142,12 +136,16 @@
       <artifactId>spring-webmvc</artifactId>
       <version>4.2.2.RELEASE</version>
     </dependency>
-
     <!-- 4)spring test相关依赖 -->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-test</artifactId>
       <version>4.2.2.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.qingpu</groupId>
+      <artifactId>Utils</artifactId>
+      <version>0.4.6</version>
     </dependency>
   </dependencies>
   <build>
