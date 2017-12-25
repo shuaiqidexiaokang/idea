@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzk.other.dao.EmployeeDao">
+    <select id="queryAll" resultType="Employee">
+        select * from tb_employee
+    </select>
+    <insert id="insertEmp" parameterType="Employee">
+        insert into tb_employee(last_name,gender,email)
+        values(#{lastName},#{gender},#{email})
+    </insert>
+    <!--1使用select标签调用存储过程
+    2statementType="CALLABLE"表示要调用存储过程-->
+    <select id="queryAllByProcedure" statementType="CALLABLE" resultType="Employee">
+        {call employee_select()}
+    </select>
+</mapper>

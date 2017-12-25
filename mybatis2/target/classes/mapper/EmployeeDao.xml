@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzk.dynamicsql.dao.EmployeeDao">
+    <select id="getEmpsByConditionIf" parameterType="Employee" resultType="Employee">
+        <!-- bind：可以将OGNL表达式的值绑定到一个变量中，方便后来引用这个变量的值 -->
+        <bind name="_email" value="'%'+email+'%'"/>
+        select *
+        from tb_employee
+        <where>
+            <if test="id!=null">
+                id = #{id}
+            </if>
+            <if test="lastName!=null &amp;&amp; lastName != &quot;&quot;">
+                and last_name like #{_parameter.lastName}
+            </if>
+
+            <if test="email!=null and email.trim() != &quot;&quot;">
+                and email like #{_email}
+            </if>
+            <if test="gender == 0 or gender == 1">
+                and gender = #{gender}
+            </if>
+        </where>
+    </select>
+    <select id="getEmpsByConditionTrim" parameterType="Employee" resultType="Employee">
+        select *
+        from tb_employee
+        <trim prefix="where" suffixOverrides="and">
+            <if test="id!=null">
+                id = #{id} and
+            </if>
+            <if test="lastName!=null &amp;&amp; lastName != &quot;&quot;">
+                last_name like #{lastName} and
+            </if>
+            <if test="email!=null and email.trim() != &quot;&quot;">
+                email like #{email} and
+            </if>
+            <if test="gender == 0 or gender == 1">
+                gender = #{gender}
+            </if>
+        </trim>
+    </select>
+    <select id="getEmpsByConditionChoose" parameterType="Employee" resultType="Employee">
+        select *
+        from tb_employee
+        <where>
+            <choose>
+                <when test="id!=null">
+                    id = #{id}
+                </when>
+                <when test="lastName!=null">
+                    last_name like #{lastName}
+                </when>
+                <when test="lastName!=null">
+                    email like #{email}
+                </when>
+                <otherwise>
+                    gender = 0
+                </otherwise>
+            </choose>
+        </where>
+    </select>
+    <update id="updateEmpSet" parameterType="Employee">
+        update tb_employee
+        <set>
+            <if test="lastName!=null">
+                last_name = #{lastName},
+            </if>
+            <if test="gender!=null">
+                gender = #{gender},
+            </if>
+            <if test="email!=null">
+                email = #{email}
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+    <update id="updateEmpTrim" parameterType="Employee">
+        update tb_employee
+        <trim prefix="set" suffixOverrides=",">
+            <if test="lastName!=null">
+                last_name = #{lastName},
+            </if>
+            <if test="gender!=null">
+                gender = #{gender},
+            </if>
+            <if test="email!=null">
+                email = #{email}
+            </if>
+        </trim>
+        where id = #{id}
+    </update>
+    <select id="getEmpsByConditionForEach" resultType="Employee">
+        select * from tb_employee where id in
+        <!--collection：指定要遍历的集合：list类型的参数会特殊处理封装在map中，map的key就叫list
+	 		item：将当前遍历出的元素赋值给指定的变量
+	 		separator:每个元素之间的分隔符
+	 		open：遍历出所有结果拼接一个开始的字符
+	 		close:遍历出所有结果拼接一个结束的字符
+	 		index:索引。遍历list的时候是index就是索引，item就是当前值
+	 				      遍历map的时候index表示的就是map的key，item就是map的值
+	 		#{变量名}就能取出变量的值也就是当前遍历出的元素-->
+        <foreach collection="ids" item="item_id" open="(" separator="," close=")">
+          #{item_id}
+        </foreach>
+    </select>
+    <insert id="insertEmps">
+        insert into tb_employee(
+        <include refid="insertColumn"></include>
+        )
+        values
+        <foreach collection="employees" item="employee" separator=",">
+            (#{employee.lastName},#{employee.gender},#{employee.email})
+        </foreach>
+    </insert>
+    <sql id="insertColumn">
+        last_name,gender,email
+    </sql>
+    <!-- 两个内置参数：
+	 	不只是方法传递过来的参数可以被用来判断，取值。。。
+	 	mybatis默认还有两个内置参数：
+	 	_parameter:代表整个参数
+	 		单个参数：_parameter就是这个参数
+	 		多个参数：参数会被封装为一个map；_parameter就是代表这个map
+	 	_databaseId:如果配置了databaseIdProvider标签。
+	 		_databaseId就是代表当前数据库的别名oracle
+	  -->
+</mapper>

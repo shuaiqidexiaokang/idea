@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+namespace:名称空间;指定为接口的全类名
+id：唯一标识
+resultType：返回值类型
+#{id}：从传递过来的参数中取出id值
+
+public Employee getEmpById(Integer id);
+ -->
+<mapper namespace="com.lzk.helloworld.dao.EmployeeDao">
+    <select id="getEmpById" resultType="Employee">
+      SELECT * from tb_employee where id = #{id}
+    </select>
+    <select id="getEmpByIdAndLastName" resultType="Employee">
+      SELECT * from tb_employee where id = #{id} and last_name = #{lastName}
+    </select>
+    <select id="getEmpByMap" resultType="Employee">
+      SELECT * from tb_employee where id = #{id} and last_name = #{lastName}
+    </select>
+    <select id="getEmpByIdReturnMap" resultType="Map">
+        SELECT * from tb_employee where id = #{id}
+    </select>
+    <select id="getAllMap" resultType="Employee">
+        SELECT * from tb_employee
+    </select>
+    <select id="getAll" resultType="Employee">
+        SELECT * from tb_employee
+    </select>
+    <!-- parameterType：参数类型，可以省略，
+	    获取自增主键的值：
+		mysql支持自增主键，自增主键值的获取，mybatis也是利用statement.getGenreatedKeys()；
+		useGeneratedKeys="true"；使用自增主键获取主键值策略
+		keyProperty；指定对应的主键属性，也就是mybatis获取到主键值以后，将这个值封装给javaBean的哪个属性
+	-->
+    <insert id="insert" parameterType="Employee"
+        useGeneratedKeys="true" keyProperty="id">
+        insert into tb_employee(last_name,gender,email)
+        values(#{lastName},#{gender},#{email})
+    </insert>
+    <delete id="delete">
+        delete from tb_employee where id = #{id}
+    </delete>
+    <update id="update" parameterType="Employee">
+        update tb_employee
+        set last_name = #{lastName},gender = #{gender},email = #{email}
+        where id = #{id}
+    </update>
+</mapper>
