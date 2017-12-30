@@ -1,0 +1,13 @@
+margin:40px auto  上下边距40px,左右居中
+text-align:center 内容居中（left:左对齐 right:右对齐 justify:两端对齐）
+overflow:hidden 隐藏溢出内容
+border-radius:4px 圆角4px
+box-shadow:0 0 2px #000 阴影（X轴偏移量 Y轴偏移量 阴影模糊半径 阴影扩展半径 阴影颜色）
+text-decoration:none 去下划线
+list-style:none 去项目符号
+display:inline-block 使行标签可以设置宽高
+transition: width 2s 渐变
+line-height:40px 行高
+text-indent:50px 缩进50px
+float:left 左浮动
+animation:bg 10s linear infinite 动画10s 匀速 无限循环
