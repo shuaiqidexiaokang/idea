@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzk.springboot2.mapper.UserMapper">
+    <select id="getUserById" resultType="User" parameterType="Integer">
+        select id,username,age,ctm
+        from tb_user
+        where id=#{id}
+    </select>
+    <select id="getUserList" resultType="User">
+        select id,username,age,ctm
+        from tb_user
+    </select>
+    <insert id="add" parameterType="User">
+        insert into tb_user(username,age,ctm)
+        values(#{user.username},#{user.age},#{user.ctm})
+    </insert>
+    <update id="update">
+        update tb_user
+        set username = #{user.username} , age = #{user.age}
+        where id = #{id}
+    </update>
+    <delete id="delete">
+        delete from tb_user where id = #{id}
+    </delete>
+</mapper>

@@ -21,6 +21,11 @@ public class EmployeeController {
     @Autowired
     private DepartmentDao departmentDao;
 
+    /**
+     * 查询所有emps
+     * @param map
+     * @return
+     */
     @RequestMapping("/emps")
     public String list(Map<String,Object> map){
         map.put("employees",employeeDao.getAll());
@@ -34,18 +39,29 @@ public class EmployeeController {
         return "input";
     }
 
+    /**
+     * 添加emp
+     * @param employee
+     * @return
+     */
     @RequestMapping(value = "/emp",method = RequestMethod.POST)
     public String save(Employee employee){
         employeeDao.save(employee);
         return "redirect:/emps";
     }
 
+    /**
+     * 删除指定emp
+     * @param id
+     * @return
+     */
     @RequestMapping(value = "/emp/{id}",method = RequestMethod.DELETE)
     @ResponseBody()
     public String delete(@PathVariable("id") Integer id){
         employeeDao.delete(id);
         return "redirect:/emps";
     }
+
 
     @RequestMapping(value = "/emp/{id}",method = RequestMethod.GET)
     public String input(@PathVariable("id") Integer id,Map<String,Object> map){

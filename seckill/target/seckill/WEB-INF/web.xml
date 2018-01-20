@@ -11,7 +11,7 @@
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <!--
             配置SpringMVC 需要配置的文件
-            spring-dao.xml，spring-service.xml,spring-web.xml
+            spring-dao.xml，spring-service.xml,spring-controller.xml
             Mybites -> spring -> springMvc
         -->
         <init-param>

@@ -26,12 +26,12 @@ import java.util.List;
  * Description:
  */
 @Service
-    public class SeckillServiceImpl implements SeckillService {
-        private Logger logger = LoggerFactory.getLogger(getClass());
-        @Autowired
-        private SeckillDao seckillDao;
-        @Autowired
-        private SuccessKilledDao successKilledDao;
+public class SeckillServiceImpl implements SeckillService {
+    private Logger logger = LoggerFactory.getLogger(getClass());
+    @Autowired
+    private SeckillDao seckillDao;
+    @Autowired
+    private SuccessKilledDao successKilledDao;
 
     //md5盐值字符串,用于混淆MD5
     private final String slat = "safksdo2140rfewfr0wer023+324*/";

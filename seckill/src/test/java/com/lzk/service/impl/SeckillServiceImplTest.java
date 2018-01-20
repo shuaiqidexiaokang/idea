@@ -76,11 +76,11 @@ public class SeckillServiceImplTest {
     //测试代码完整代码，注意可重复
     @Test
     public void testSeckillLogic(){
-        long id = 1001L;
+        long id = 1002L;
         Exposer exposer = seckillService.exportSeckillUrl(id);
         if (exposer.isExposed()){
             logger.info("exposer={}",exposer);
-            long phone = 17777777772L;
+            long phone = 17777777773L;
             String md5 = exposer.getMd5();
             try{
                 SeckillExecution seckillExecution = seckillService.executeSeckill(id,phone,md5);

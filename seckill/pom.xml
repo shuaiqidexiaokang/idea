@@ -7,6 +7,13 @@
   <version>1.0-SNAPSHOT</version>
   <name>seckill Maven Webapp</name>
   <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <java.version>1.8</java.version>
+  </properties>
+
   <dependencies>
     <!--使用junit4 -->
     <dependency>
@@ -146,6 +153,12 @@
       <groupId>org.qingpu</groupId>
       <artifactId>Utils</artifactId>
       <version>0.4.6</version>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.16.18</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
   <build>
