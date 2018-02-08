@@ -43,7 +43,7 @@ public class UserController {
      * 查询用户列表
      * @return
      */
-    @GetMapping("/users")
+/*    @GetMapping("/users")
     public ResponseEntity<JsonResult> getUserList(){
         JsonResult r = new JsonResult();
         try {
@@ -56,6 +56,10 @@ public class UserController {
             e.printStackTrace();
         }
         return ResponseEntity.ok(r);
+    }*/
+    @GetMapping("/users")
+    public List<User> getUserList(){
+            return userMapper.getUserList();
     }
 
     /**

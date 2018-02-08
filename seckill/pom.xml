@@ -15,6 +15,7 @@
   </properties>
 
   <dependencies>
+    <!--这里面可以省略的依赖有：spring-core;spring-beans（上面这两个spring-context会自动依赖）;spring-context，spring-jdbc（mybatis-spring会依赖）；spring-web（spring-webmvc会依赖）；logback-core（logback-classic会依赖）.-->
     <!--使用junit4 -->
     <dependency>
       <groupId>junit</groupId>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/bootstrap-3.3.7-dist/css/bootstrap.css">
+
+    <style type="text/css">
+        body{
+            margin:0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="btnshow" type="button" class="btn btn-primary">显示所有学生信息</button>
+    </div>
+    <div id="result" class="row"></div>
+    <div class="row">
+        <form class="col-md-4">
+            <div class="form-group">
+                <label class="sr-only" for="name">Amount (in dollars)</label>
+                <div class="input-group">
+                    <div class="input-group-addon">姓名</div>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="age">Amount (in dollars)</label>
+                <div class="input-group">
+                    <div class="input-group-addon">年龄</div>
+                    <input type="text" class="form-control" id="age" name="age" placeholder="age">
+                    <div class="input-group-addon">岁</div>
+                </div>
+            </div>
+            <div class="row">
+                <button id="save" class="btn btn-primary col-md-offset-8">保存</button>
+            </div>
+        </form>
+    </div>
+    <div id="saveResult"></div>
+<script src="/bootstrap-3.3.7-dist/js/jquery-3.2.1.js" type="text/javascript"></script>
+<script src="/bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript"></script>
+<script>
+    $(function(){
+       $('#btnshow').click(function(){
+           $.ajax({
+               type:"GET",
+               url:"/students",
+               dataType:"json",
+               success:function(students){
+                   var result = '<div class="col-md-4"><table class="table table-bordered table-hover col-md-4"><thead><tr><th>编号</th><th>姓名</th><th>年龄</th></tr></thead><tbody>';
+                   for(var student in students){
+                       result+='<tr><td>'+ students[student].id +'</td><td>'+
+                           students[student].name + '</td><td>'+ students[student].age+'</td></tr>';
+                   }
+                   result+='</tbody></table></div>';
+                   $('#result').html(result);
+               },
+               error:function(jqXHR){
+                    alert('发生错误：' + jqXHR.status);
+               }
+
+           });
+       });
+
+       $('#save').click(function(){
+           var age = $('#age').val();
+           var name = $('#name').val();
+           $.ajax({
+               type:"POST",
+               url:"/students",
+               dataType:"json",
+               data:{name:name,age:age},
+               success:function(student){
+                   $('#saveResult').html(student);
+               },
+               error:function(e){
+                   alert('发生错误：' + e.status + ',但还是能往数据库插入信息');
+               }
+           });
+       });
+    });
+ /*   document.getElementById('btnshow').onclick = function(){
+        var request = new XMLHttpRequest();
+        request.open('GET','/students');
+        request.send();
+        request.onreadystatechange = function(){
+            if (request.readyState === 4) {
+                if (request.status === 200) {
+                    var students = JSON.parse(request.responseText);
+                    var result = '<div class="col-md-4"><table class="table table-bordered table-hover col-md-4"><thead><tr><th>编号</th><th>姓名</th><th>年龄</th></tr></thead><tbody>';
+                    for(var student in students){
+                        result+='<tr><td>'+ students[student].id +'</td><td>'+
+                            students[student].name + '</td><td>'+ students[student].age+'</td></tr>';
+                    }
+                    result+='</tbody></table></div>';
+                    document.getElementById('result').innerHTML = result;
+                }else{
+                    alert('发生错误：' + request.status);
+                }
+            }
+        }
+    }
+
+    document.getElementById('save').onclick = function(){
+        var age = document.getElementById('age').value;
+        var name = document.getElementById('name').value;
+        var request = new XMLHttpRequest();
+        var data = 'age=' + age + '&' + 'name=' + name;
+        request.open('POST','/students');
+        request.setRequestHeader("Content-Type","application/x-www-form-urlencoded ");
+        request.send(data);
+        request.onreadystatechange = function(){
+            if (request.readyState === 4) {
+                if (request.status === 200) {
+                    document.getElementById('saveResult').innerHTML += request.responseText;
+                }else{
+                    alert('发生错误：' + request.status + '但还是能往数据库插入信息');
+                }
+            }
+        }
+    }*/
+</script>
+</body>
+</html>

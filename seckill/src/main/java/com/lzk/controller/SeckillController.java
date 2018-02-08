@@ -94,8 +94,7 @@ public class SeckillController {
         }catch (SeckillCloseException e2){
             SeckillExecution execution=new SeckillExecution(seckillId, SeckillStatEnum.END);
             return new SeckillResult<SeckillExecution>(true,execution);
-        }
-        catch (Exception e){
+        }catch (Exception e){
             SeckillExecution execution=new SeckillExecution(seckillId, SeckillStatEnum.INNER_ERROR);
             return new SeckillResult<SeckillExecution>(true,execution);
         }
