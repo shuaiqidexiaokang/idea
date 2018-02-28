@@ -32,4 +32,13 @@
     <url-pattern>/downloadServlet</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>UeditorServlet</servlet-name>
+    <servlet-class>com.lzk.ueditor.UeditorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UeditorServlet</servlet-name>
+    <url-pattern>/ueditorServlet</url-pattern>
+  </servlet-mapping>
+
 </web-app>

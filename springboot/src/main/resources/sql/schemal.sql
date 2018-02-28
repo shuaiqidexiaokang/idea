@@ -5,4 +5,4 @@ CREATE TABLE `student` (
   `name` varchar(50) NOT NULL COMMENT '用户名',
   `age` int(11) NOT NULL COMMENT '年龄',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1000 DEFAULT CHARSET=utf8;

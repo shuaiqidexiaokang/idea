@@ -11,7 +11,7 @@
     <c:if test="${empty requestScope.employees}}">
         没有任何员工信息
     </c:if>
-    <C:if test="${!empty requestScope.employees}">
+    <c:if test="${!empty requestScope.employees}">
         <table border="1" cellpadding="10" cellspacing="0">
             <tr>
                 <th>ID</th>
@@ -34,7 +34,7 @@
                 </tr>
             </c:forEach>
         </table>
-    </C:if>
+    </c:if>
     <br><br>
     <a href="emp">Add New Employee</a>
 </body>

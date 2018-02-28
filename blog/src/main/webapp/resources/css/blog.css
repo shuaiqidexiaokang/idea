@@ -1,0 +1,24 @@
+body{
+    background-color: #efefef;
+}
+.container{
+    background-color:white;
+}
+#blog-head a{
+    color: #FFFFFF;
+    background-color: #303643
+}
+#blog-container{
+    background-color: #303643;
+}
+
+.blog_list {
+    border-bottom: 4px double#E5E5E5;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#blog-foot p{
+    color:white;
+    background-color: #303643;
+}

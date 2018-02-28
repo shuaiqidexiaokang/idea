@@ -14,6 +14,7 @@
     <h2>Hello World</h2>
     <a href="uploadfile.jsp">uploadfile</a>
     <a href="uploadfile1.jsp">uploadfile1</a>
-    <a href="ueditor.jsp">ueditor</a>
+    <a href="ueditor.jsp">ueditor.jsp</a>
+    <a href="ueditor.html">ueditor.html</a>
 </body>
 </html>

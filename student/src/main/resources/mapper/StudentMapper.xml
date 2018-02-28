@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lzk.mapper.StudentMapper">
+    <insert id="addStudent" parameterType="Student">
+        insert into tb_student(name,age)
+        value(#{name},#{age});
+    </insert>
+
+    <delete id="deleteStudent">
+        delete from tb_student
+        where id=#{id}
+    </delete>
+
+    <update id="updateStudent" parameterType="Student">
+        update tb_student
+        set name = #{name},age = #{age}
+        where id=#{id}
+    </update>
+
+    <select id="queryStudentById" resultType="Student">
+        select id,name,age
+        from tb_student
+        where id=#{id}
+    </select>
+
+    <select id="queryStudents" resultType="Student">
+        select id,name,age
+        from tb_student
+    </select>
+</mapper>

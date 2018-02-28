@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzk.mapper.ArticleMapper">
+    <select id="queryById" resultType="Article">
+        SELECT
+            a.article_id,
+            a.title,
+            a.type_id,
+            a.keyword,
+            a.summary,
+            a.context,
+            a.read_number,
+            a.create_time,
+            t.type_id   "type.type_id",
+            t.type_name "type.type_name",
+            t.number    "type.number"
+        FROM article a
+            INNER JOIN type t
+                ON a.type_id = t.type_id
+        WHERE a.article_id = #{articleId}
+    </select>
+
+    <select id="queryAllSortByTime" resultType="Article">
+        SELECT
+            a.article_id,
+            a.title,
+            a.type_id,
+            a.keyword,
+            a.summary,
+            a.context,
+            a.read_number,
+            a.create_time,
+            t.type_id   "type.type_id",
+            t.type_name "type.type_name",
+            t.number    "type.number"
+        FROM article a
+            INNER JOIN type t
+                ON a.type_id = t.type_id
+        ORDER BY
+            a.create_time DESC
+        LIMIT
+            #{offset}, #{limit}
+    </select>
+
+    <select id="queryAllSortByReadNumber" resultType="Article">
+        SELECT
+            a.article_id,
+            a.title,
+            a.type_id,
+            a.keyword,
+            a.summary,
+            a.context,
+            a.read_number,
+            a.create_time,
+            t.type_id   "type.type_id",
+            t.type_name "type.type_name",
+            t.number    "type.number"
+        FROM article a
+            INNER JOIN type t
+                ON a.type_id = t.type_id
+        ORDER BY
+            a.read_number DESC
+        LIMIT
+            #{offset}, #{limit}
+    </select>
+
+    <select id="queryAllByTypeIdOrCreateTimeSortByTime" resultType="Article">
+        SELECT
+            a.article_id,
+            a.title,
+            a.type_id,
+            a.keyword,
+            a.summary,
+            a.context,
+            a.read_number,
+            a.create_time,
+            t.type_id   "type.type_id",
+            t.type_name "type.type_name",
+            t.number    "type.number"
+        FROM article a
+            INNER JOIN type t
+                ON a.type_id = t.type_id
+        WHERE t.type_id = #{typeId} OR DATE_FORMAT(a.create_time, '%Y年%m月') = #{createTime}
+        ORDER BY
+            a.create_time DESC
+        LIMIT
+            #{offset}, #{limit}
+    </select>
+
+    <select id="queryDate" resultType="CreateTimeCount">
+        SELECT
+            DATE_FORMAT(create_time, '%Y年%m月') "create_time",
+            count(*) "count"
+        FROM article
+        GROUP BY DATE_FORMAT(create_time, '%Y年%m月')
+        ORDER BY
+            create_time
+        DESC;
+    </select>
+
+    <select id="queryCountByTypeIdOrCreate" resultType="java.lang.Integer">
+        SELECT count(*)
+        FROM article
+        <where>
+            <choose>
+                <when test="typeId!=null">
+                    type_id = #{typeId}
+                </when>
+                <when test="createTime!=null">
+                    DATE_FORMAT(create_time, '%Y年%m月') = #{createTime}
+                </when>
+            </choose>
+        </where>
+    </select>
+
+    <insert id="addArticle" parameterType="Article">
+        INSERT INTO
+            article (title, type_id, keyword, summary, context, read_number, create_time)
+        VALUES
+            (#{title}, #{typeId}, #{keyword}, #{summary}, #{context}, 0, now())
+    </insert>
+
+    <update id="updateArticle" parameterType="Article">
+        UPDATE
+            article
+        SET
+            title   = #{title},
+            type_id = #{typeId},
+            keyword = #{keyword},
+            summary = #{summary},
+            context = #{context}
+        WHERE
+            article_id = #{articleId}
+    </update>
+
+    <delete id="deleteArticle">
+        DELETE FROM
+            article
+        WHERE
+            article_id = #{articleId}
+    </delete>
+</mapper>

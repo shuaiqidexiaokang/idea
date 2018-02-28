@@ -1,0 +1,343 @@
+﻿个人博客的设计
+参照网站http://blog.notejava.com/index
+
+数据库表的设计
+用户表（因为是个人博客，所以只有一条记录）：
+编号、用户名，密码
+博客文章表的设计：
+博客文章编号、标题、类别编号、关键字、内容、阅读数、创建时间、更新时间
+类别表：
+类别编号、类别
+评论表：
+评论编号、博客文章编号、评论人姓名、评论人邮箱、内容、创建时间、点赞数、狂踩数
+
+分为前台和后端
+后端主要负责博客文章的写入
+前端主要负责博客文章的显示
+
+前端显示还有
+热门文章
+近期文章
+最新评论
+分类目录
+日期归档
+
+根据文章编号、评论时间进行降序排序查询评论
+根据文章编号、评论热度进行降序排序查询评论
+
+
+一、创建maven项目
+
+二、引入依赖到pom.xml
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- 补全项目依赖 -->
+    <!-- 1:日志 java日志：slf4j,log4j,logback,common-logging
+        slf4j 是规范/接口
+        日志使用：logback,common-logging
+        使用：slf4j+logback
+     -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.22</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-core</artifactId>
+      <version>1.1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.1.1</version>
+    </dependency>
+
+    <!-- 2：数据库相关依赖 -->
+    <!-- 驱动 -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.45</version>
+      <scope>runtime</scope>
+    </dependency>
+    <!-- 数据库连接池 -->
+    <dependency>
+      <groupId>c3p0</groupId>
+      <artifactId>c3p0</artifactId>
+      <version>0.9.1.2</version>
+    </dependency>
+
+    <!--3:DAO框架：Mybatis依赖  -->
+    <!-- mybatis自身依赖 -->
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis</artifactId>
+      <version>3.4.1</version>
+    </dependency>
+    <!-- mybatis自身实现的spring整合依赖 -->
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis-spring</artifactId>
+      <version>1.3.0</version>
+    </dependency>
+
+    <!-- Servlet web相关依赖 -->
+    <!-- jsp标签 -->
+    <dependency>
+      <groupId>taglibs</groupId>
+      <artifactId>standard</artifactId>
+      <version>1.1.2</version>
+    </dependency>
+    <!-- js默认标签库 -->
+    <dependency>
+      <groupId>jstl</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+    </dependency>
+    <!-- jackson -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.8.7</version>
+    </dependency>
+    <!-- servlet -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+    </dependency>
+    <!-- 4:spring依赖 -->
+    <!-- 1）spring核心依赖 -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>4.2.2.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-beans</artifactId>
+      <version>4.2.2.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>4.2.2.RELEASE</version>
+    </dependency>
+    <!-- spring dao依赖 -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>4.2.2.RELEASE</version>
+    </dependency>
+    <!-- 声明式事务 -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-tx</artifactId>
+      <version>4.2.2.RELEASE</version>
+    </dependency>
+    <!-- 3)spring web相关依赖 -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>4.2.2.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>4.2.2.RELEASE</version>
+    </dependency>
+    <!-- 4)spring test相关依赖 -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>4.2.2.RELEASE</version>
+    </dependency>
+
+
+三、创建数据库表
+drop database if exists blog;
+create database blog;
+use blog;
+
+create table user(
+  user_id int auto_increment comment '用户编号',
+  username varchar(20) comment '用户名',
+  password varchar(20) comment '密码',
+  primary key(user_id)
+)engine=InnoDB auto_increment=1000 default charset=utf8 comment='用户表';
+
+insert into user(username,password)
+values('admin','admin');
+
+create table article(
+  article_id int not null auto_increment comment '文章编号',
+  title varchar(20) not null comment '标题',
+  type_id int not null comment '类型编号',
+  keyword varchar(10) not null comment '关键字',
+  context text not null comment '内容',
+  read_number int not null comment '阅读数',
+  create_time timestamp not null comment '创建时间',
+  update_time timestamp not null comment '更新时间',
+  primary key(article_id),
+  key idx_type_id(type_id),
+  key idx_read_number(read_number),
+  key idx_create_time(create_time)
+)engine=InnoDB auto_increment=1000 default charset=utf8 comment='博客文章表';
+
+insert into article(title,type_id,keyword,context,read_number,create_time,update_time)
+values('关于notejava',1,'note','（1）博客展现系统：
+①博客全文检索，读者可根据关键字进行站内搜索，返回击中的文章。
+②热门文章，读者可在热点文章一栏中可以看到阅读量最多的文章。
+③最新文章，读者可在最新文章一栏中看到最新发布的文章。
+④按类别归档文章，读者可根据类别进行文章筛选阅读。
+⑤按时间归档文章，读者可根据文章发表时间筛选阅读。
+⑥评论文章，每篇文章的底部都可以评论，支持通过第三方媒体账号登录评论。
+⑦留言板，读者可在留言板中给博主留言，提出一些问题或者建议。
+（2）博文管理系统：
+①文章管理
+②文章类别管理
+③评论管理
+④友情链接管理
+⑤博主信息管理
+⑥公共缓存数据管理
+⑦登录安全校验
+（3）博文定时统计任务系统：
+①每隔一小时统计出阅读量最多的五篇文章作为热门文章，缓存起来。
+②每隔一小时统计出最新的五篇文章作为最新文章，缓存起来。
+③每隔一小时统计出最新的五条评论作为最近评论，缓存起来。',200,now(),now());
+
+create table type(
+  type_id int not null auto_increment comment '类别编号',
+  type varchar(10) not null comment'类别',
+  primary key(type_id)
+)engine=InnoDB auto_increment=1 default charset=utf8 comment='类别表';
+insert into type(type)
+values
+  ('java'),
+  ('java'),
+  ('javaee'),
+  ('linux'),
+  ('随笔'),
+  ('前端'),
+  ('ajax'),
+  ('maven'),
+  ('mysql'),
+  ('设计模式');
+
+create table comment(
+  comment_id int not null auto_increment comment '评论编号',
+  article_id int not null comment '文章编号',
+  name varchar(10) not null comment '评论者姓名',
+  email varchar(20) not null comment '评论者邮箱',
+  context text not null comment '内容',
+  creat_time timestamp not null comment '创建时间',
+  thumbs_number int not null comment '点赞数',
+  toes_number int not null comment '狂踩数',
+  primary key(comment_id),
+  key idx_creat_time(creat_time),
+  key idx_thumbs_number(thumbs_number)
+)engine=InnoDB auto_increment=1 default charset=utf8 comment='评论表';
+
+
+四、dao（mapper）层设计
+1根据数据表创建model
+2在mapper包中设计各个model所需要的方法接口（增删改查）
+3实现*mapper.xml中的方法
+4配置文件
+jdbc.propertiys
+	user = root
+	password = root
+	driverClass = com.mysql.jdbc.Driver
+	url = jdbc:mysql://localhost/blog?useUnicode=true&charsetEncoding=utf8
+logback.xml
+	<?xml version="1.0" encoding="UTF-8" ?>
+	<configuration>
+
+	    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+	        <!-- encoders are assigned the type
+	             ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+	        <encoder>
+	            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+	        </encoder>
+	    </appender>
+
+	    <root level="debug">
+	        <appender-ref ref="STDOUT"/>
+	    </root>
+	</configuration>
+mybatis-config.xml
+	<?xml version="1.0" encoding="UTF-8" ?>
+	<!DOCTYPE configuration
+	        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+	<configuration>
+	    <!-- 配置全局变量 -->
+	    <settings>
+	        <!--使用jdbc的getGeneratekeys获取自增主键值-->
+	        <setting name="useGeneratedKeys" value="true"></setting>
+	        <!--使用列别名替换列名　　默认值为true
+	       select name as title(实体中的属性名是title) form table;
+	       开启后mybatis会自动帮我们把表中name的值赋到对应实体的title属性中
+	       -->
+	        <setting name="useColumnLabel" value="true"></setting>
+	        <!--开启驼峰命名转换Table:create_time到 Entity(createTime)-->
+	        <setting name="mapUnderscoreToCamelCase" value="true"></setting>
+	    </settings>
+	</configuration>
+spring-mapper.xml
+	<?xml version="1.0" encoding="UTF-8"?>
+	<beans xmlns="http://www.springframework.org/schema/beans"
+	       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	       xmlns:context="http://www.springframework.org/schema/context"
+	       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	       http://www.springframework.org/schema/beans/spring-beans.xsd
+	        http://www.springframework.org/schema/context
+	        http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+	    <!--1引入jdbc配置文件-->
+	    <context:property-placeholder location="classpath:jdbc.properties"/>
+	    <!--2配置数据连接池-->
+	    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+	        <!--配置连接池属性-->
+	        <property name="driverClass" value="${driverClass}"/>
+	        <!-- 基本属性 url、user、password -->
+	        <property name="user" value="${user}"/>
+	        <property name="password" value="${password}"/>
+	        <property name="jdbcUrl" value="${url}"/>
+	        <!--c3p0私有属性-->
+	        <property name="maxPoolSize" value="30"/>
+	        <property name="minPoolSize" value="10"/>
+	        <!--关闭连接后不自动commit-->
+	        <property name="autoCommitOnClose" value="false"/>
+	        <!--获取连接超时时间-->
+	        <property name="checkoutTimeout" value="1000"/>
+	        <!--当获取连接失败重试次数-->
+	        <property name="acquireRetryAttempts" value="2"/>
+	    </bean>
+	    <!--3配置sqlSessionFactory对象-->
+	    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+	        <!--注入数据库连接池-->
+	        <property name="dataSource" ref="dataSource"/>
+	        <!--配置mybatis全局配置文件:mybatis-config.xml-->
+	        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+	        <!--扫描entity包,使用别名,多个用;隔开-->
+	        <property name="typeAliasesPackage" value="com.lzk.model"/>
+	        <!--扫描sql配置文件:mapper需要的xml文件-->
+	        <property name="mapperLocations" value="classpath:mapper/*.xml"/>
+	    </bean>
+
+	    <!--4配置自动扫描mapper接口包，动态实现mapper接口，注入到IOC容器-->
+	    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+	        <!--注入SqlSessionFactory-->
+	        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+	        <!-- 给出需要扫描的Dao接口-->
+	        <property name="basePackage" value="com.lzk.mapper"/>
+	    </bean>
+	</beans>
+5测试mapper包中各个方法
+
