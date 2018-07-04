@@ -27,6 +27,7 @@ public class EmployeeDaoTest {
 
     @Test
     public void getEmpById() throws IOException {
+        getSqlSession().selectOne()
         SqlSession sqlSession = getSqlSession();
         try{
             //3、获取接口的实现类对象
