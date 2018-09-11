@@ -5,7 +5,7 @@
       <configuration />
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -42,6 +42,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-websocket:4.2.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.mchange:c3p0:0.9.5" level="project" />
     <orderEntry type="library" name="Maven: com.mchange:mchange-commons-java:0.2.9" level="project" />
-    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.44" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.6" level="project" />
   </component>
 </module>

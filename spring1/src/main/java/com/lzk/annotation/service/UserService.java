@@ -1,6 +1,5 @@
 package com.lzk.annotation.service;
 
-import com.lzk.annotation.controller.UserController;
 import com.lzk.annotation.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

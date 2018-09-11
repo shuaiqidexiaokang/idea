@@ -9,7 +9,7 @@
         <property name="connection.password">root</property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="connection.url">jdbc:mysql://localhost/hibernate1</property>
-
+        <property name="connection.characterEncoding">UTF8</property>
         <!--  2、配置hibernate的基本信息 -->
         <!--  配置hibernate所使用的方言 -->
         <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
